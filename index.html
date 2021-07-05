@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h2>Vote for Your Language</h2>
+        <br>
+        <br>
+        <div>
+            <div class="vote" style="width: 200px; height: 40px; border: 1px solid darkcyan;  background-color: darkcyan; text-align: center; ">
+                <input type="text" id="php" value="0"readonly style="width: 30px;  outline: darkcyan; margin-top: 5px;"> &nbsp; <span>PHP</span> &nbsp; <button style="color: maroon; font-weight: bold; border-collapse: collapse;" onclick="PH()">Click Here</button>
+            </div>
+            <br>
+            <div class="vote" style="width: 200px; height: 40px; border: 1px solid darkcyan;  background-color: darkcyan; text-align: center; ">
+                <input type="text" id="pyn" value="0"readonly style="width: 30px;  outline: darkcyan; margin-top: 5px;"> &nbsp;&nbsp; <span>Python</span> &nbsp; <button style="color: maroon; font-weight: bold;" onclick="pyn()">Click Here</button>
+            </div>
+            <br>
+            <div class="vote" style="width: 200px; height: 40px; border: 1px solid darkcyan;  background-color: darkcyan; text-align: center; ">
+                <input type="text" readonly value="0"id="go"style="width: 30px;  outline: darkcyan; margin-top: 5px;"> &nbsp; <span>Go</span> &nbsp; <button style="color: maroon; font-weight: bold;" onclick="go()">Click Here</button>
+            </div>
+            <br>
+            <div class="vote" style="width: 200px; height: 40px; border: 1px solid darkcyan;  background-color: darkcyan; text-align: center; ">
+                <input type="text" readonly value="0" id="java"style="width: 30px;  outline: darkcyan; margin-top: 5px;"> &nbsp; <span>Java</span> &nbsp; <button style="color: maroon; font-weight: bold;" onclick="java()" >Click Here</button>
+            </div>
+            
+        </div>
+    </div>
+
+
+
+    <script>
+        var php=parseInt(document.getElementById('php').value)
+        function PH(){
+            php+=1;
+            document.getElementById('php').value=php
+        }
+        // ---------------------------------------Python---------------------------------------
+        var Pyn=parseInt(document.getElementById('pyn').value)
+        function pyn(){
+            Pyn+=1;
+            document.getElementById('pyn').value=Pyn
+        }
+
+        // ---------------------------------GO---------------------------------------------
+        var Go=parseInt(document.getElementById('go').value)
+        function go(){
+            Go+=1;
+            document.getElementById('go').value=Go
+        }
+        // ------------------------------------java--------------------------------
+        var Java=parseInt(document.getElementById('java').value)
+        function java(){
+            Java+=1;
+            document.getElementById('java').value=Java
+        }
+
+    </script>
+</body>
+</html>

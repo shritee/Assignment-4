@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: orange; text-align: center;">
+    <h1 style="color: white;">Hello World!</h1>
+    <br>
+    <br>
+    <p style="color: white;">What color ?</p>
+    <select name="" onchange="color(this.value)" >
+        <option value="orange" >orange</option>
+        <option value="cyan" >cyan</option>
+        <option value="cadetblue" >cadetblue</option>
+        <option value="indigo" >indigo</option>
+        <option value="red" >red</option>
+    </select>
+</body>
+
+<script>
+    
+    function color(value){
+        document.body.style.background=value;
+    }
+   
+</script>
+</html>
